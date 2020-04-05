@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB373BC22439D4B200FA249A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB373BC12439D4B200FA249A /* AppDelegate.swift */; };
+		CB373BC42439D4B200FA249A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB373BC32439D4B200FA249A /* ViewController.swift */; };
+		CB373BC72439D4B200FA249A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB373BC52439D4B200FA249A /* Main.storyboard */; };
+		CB373BCA2439D4B200FA249A /* AssignmentWipro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB373BC82439D4B200FA249A /* AssignmentWipro.xcdatamodeld */; };
+		CB373BCC2439D4B400FA249A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB373BCB2439D4B400FA249A /* Assets.xcassets */; };
+		CB373BCF2439D4B400FA249A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB373BCD2439D4B400FA249A /* LaunchScreen.storyboard */; };
+		CB373BDA2439D4B400FA249A /* AssignmentWiproTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB373BD92439D4B400FA249A /* AssignmentWiproTests.swift */; };
+		CB373BE52439D4B400FA249A /* AssignmentWiproUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB373BE42439D4B400FA249A /* AssignmentWiproUITests.swift */; };
+		CB373BF42439D58400FA249A /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB373BF32439D58400FA249A /* AsyncImageView.swift */; };
+		CBE9DB122439EA810064814B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9DB112439EA810064814B /* NetworkClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB373BD62439D4B400FA249A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB373BB62439D4B200FA249A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB373BBD2439D4B200FA249A;
+			remoteInfo = AssignmentWipro;
+		};
+		CB373BE12439D4B400FA249A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB373BB62439D4B200FA249A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB373BBD2439D4B200FA249A;
+			remoteInfo = AssignmentWipro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB373BBE2439D4B200FA249A /* AssignmentWipro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentWipro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB373BC12439D4B200FA249A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB373BC32439D4B200FA249A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB373BC62439D4B200FA249A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB373BC92439D4B200FA249A /* AssignmentWipro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AssignmentWipro.xcdatamodel; sourceTree = "<group>"; };
+		CB373BCB2439D4B400FA249A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB373BCE2439D4B400FA249A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB373BD02439D4B400FA249A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB373BD52439D4B400FA249A /* AssignmentWiproTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentWiproTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB373BD92439D4B400FA249A /* AssignmentWiproTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentWiproTests.swift; sourceTree = "<group>"; };
+		CB373BDB2439D4B400FA249A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB373BE02439D4B400FA249A /* AssignmentWiproUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentWiproUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB373BE42439D4B400FA249A /* AssignmentWiproUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentWiproUITests.swift; sourceTree = "<group>"; };
+		CB373BE62439D4B400FA249A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB373BF32439D58400FA249A /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		CBE9DB112439EA810064814B /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB373BBB2439D4B200FA249A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB373BD22439D4B400FA249A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB373BDD2439D4B400FA249A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB373BB52439D4B200FA249A = {
+			isa = PBXGroup;
+			children = (
+				CB373BC02439D4B200FA249A /* AssignmentWipro */,
+				CB373BD82439D4B400FA249A /* AssignmentWiproTests */,
+				CB373BE32439D4B400FA249A /* AssignmentWiproUITests */,
+				CB373BBF2439D4B200FA249A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB373BBF2439D4B200FA249A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB373BBE2439D4B200FA249A /* AssignmentWipro.app */,
+				CB373BD52439D4B400FA249A /* AssignmentWiproTests.xctest */,
+				CB373BE02439D4B400FA249A /* AssignmentWiproUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB373BC02439D4B200FA249A /* AssignmentWipro */ = {
+			isa = PBXGroup;
+			children = (
+				CBE9DB102439EA650064814B /* APIClient */,
+				CB373BF22439D54700FA249A /* Extension */,
+				CB373BC12439D4B200FA249A /* AppDelegate.swift */,
+				CB373BC32439D4B200FA249A /* ViewController.swift */,
+				CB373BC52439D4B200FA249A /* Main.storyboard */,
+				CB373BCB2439D4B400FA249A /* Assets.xcassets */,
+				CB373BCD2439D4B400FA249A /* LaunchScreen.storyboard */,
+				CB373BD02439D4B400FA249A /* Info.plist */,
+				CB373BC82439D4B200FA249A /* AssignmentWipro.xcdatamodeld */,
+			);
+			path = AssignmentWipro;
+			sourceTree = "<group>";
+		};
+		CB373BD82439D4B400FA249A /* AssignmentWiproTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB373BD92439D4B400FA249A /* AssignmentWiproTests.swift */,
+				CB373BDB2439D4B400FA249A /* Info.plist */,
+			);
+			path = AssignmentWiproTests;
+			sourceTree = "<group>";
+		};
+		CB373BE32439D4B400FA249A /* AssignmentWiproUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB373BE42439D4B400FA249A /* AssignmentWiproUITests.swift */,
+				CB373BE62439D4B400FA249A /* Info.plist */,
+			);
+			path = AssignmentWiproUITests;
+			sourceTree = "<group>";
+		};
+		CB373BF22439D54700FA249A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CB373BF32439D58400FA249A /* AsyncImageView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CBE9DB102439EA650064814B /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				CBE9DB112439EA810064814B /* NetworkClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB373BBD2439D4B200FA249A /* AssignmentWipro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB373BE92439D4B400FA249A /* Build configuration list for PBXNativeTarget "AssignmentWipro" */;
+			buildPhases = (
+				CB373BBA2439D4B200FA249A /* Sources */,
+				CB373BBB2439D4B200FA249A /* Frameworks */,
+				CB373BBC2439D4B200FA249A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AssignmentWipro;
+			productName = AssignmentWipro;
+			productReference = CB373BBE2439D4B200FA249A /* AssignmentWipro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB373BD42439D4B400FA249A /* AssignmentWiproTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB373BEC2439D4B400FA249A /* Build configuration list for PBXNativeTarget "AssignmentWiproTests" */;
+			buildPhases = (
+				CB373BD12439D4B400FA249A /* Sources */,
+				CB373BD22439D4B400FA249A /* Frameworks */,
+				CB373BD32439D4B400FA249A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB373BD72439D4B400FA249A /* PBXTargetDependency */,
+			);
+			name = AssignmentWiproTests;
+			productName = AssignmentWiproTests;
+			productReference = CB373BD52439D4B400FA249A /* AssignmentWiproTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB373BDF2439D4B400FA249A /* AssignmentWiproUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB373BEF2439D4B400FA249A /* Build configuration list for PBXNativeTarget "AssignmentWiproUITests" */;
+			buildPhases = (
+				CB373BDC2439D4B400FA249A /* Sources */,
+				CB373BDD2439D4B400FA249A /* Frameworks */,
+				CB373BDE2439D4B400FA249A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB373BE22439D4B400FA249A /* PBXTargetDependency */,
+			);
+			name = AssignmentWiproUITests;
+			productName = AssignmentWiproUITests;
+			productReference = CB373BE02439D4B400FA249A /* AssignmentWiproUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB373BB62439D4B200FA249A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Aditi Garg";
+				TargetAttributes = {
+					CB373BBD2439D4B200FA249A = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					CB373BD42439D4B400FA249A = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = CB373BBD2439D4B200FA249A;
+					};
+					CB373BDF2439D4B400FA249A = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = CB373BBD2439D4B200FA249A;
+					};
+				};
+			};
+			buildConfigurationList = CB373BB92439D4B200FA249A /* Build configuration list for PBXProject "AssignmentWipro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB373BB52439D4B200FA249A;
+			productRefGroup = CB373BBF2439D4B200FA249A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB373BBD2439D4B200FA249A /* AssignmentWipro */,
+				CB373BD42439D4B400FA249A /* AssignmentWiproTests */,
+				CB373BDF2439D4B400FA249A /* AssignmentWiproUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB373BBC2439D4B200FA249A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB373BCF2439D4B400FA249A /* LaunchScreen.storyboard in Resources */,
+				CB373BCC2439D4B400FA249A /* Assets.xcassets in Resources */,
+				CB373BC72439D4B200FA249A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB373BD32439D4B400FA249A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB373BDE2439D4B400FA249A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB373BBA2439D4B200FA249A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB373BC42439D4B200FA249A /* ViewController.swift in Sources */,
+				CBE9DB122439EA810064814B /* NetworkClient.swift in Sources */,
+				CB373BCA2439D4B200FA249A /* AssignmentWipro.xcdatamodeld in Sources */,
+				CB373BC22439D4B200FA249A /* AppDelegate.swift in Sources */,
+				CB373BF42439D58400FA249A /* AsyncImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB373BD12439D4B400FA249A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB373BDA2439D4B400FA249A /* AssignmentWiproTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB373BDC2439D4B400FA249A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB373BE52439D4B400FA249A /* AssignmentWiproUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB373BD72439D4B400FA249A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB373BBD2439D4B200FA249A /* AssignmentWipro */;
+			targetProxy = CB373BD62439D4B400FA249A /* PBXContainerItemProxy */;
+		};
+		CB373BE22439D4B400FA249A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB373BBD2439D4B200FA249A /* AssignmentWipro */;
+			targetProxy = CB373BE12439D4B400FA249A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB373BC52439D4B200FA249A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB373BC62439D4B200FA249A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB373BCD2439D4B400FA249A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB373BCE2439D4B400FA249A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB373BE72439D4B400FA249A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB373BE82439D4B400FA249A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB373BEA2439D4B400FA249A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLAPZ3LKA;
+				INFOPLIST_FILE = AssignmentWipro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wipro.AssignmentWipro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB373BEB2439D4B400FA249A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLAPZ3LKA;
+				INFOPLIST_FILE = AssignmentWipro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wipro.AssignmentWipro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB373BED2439D4B400FA249A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLAPZ3LKA;
+				INFOPLIST_FILE = AssignmentWiproTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wipro.AssignmentWiproTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssignmentWipro.app/AssignmentWipro";
+			};
+			name = Debug;
+		};
+		CB373BEE2439D4B400FA249A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLAPZ3LKA;
+				INFOPLIST_FILE = AssignmentWiproTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wipro.AssignmentWiproTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssignmentWipro.app/AssignmentWipro";
+			};
+			name = Release;
+		};
+		CB373BF02439D4B400FA249A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLAPZ3LKA;
+				INFOPLIST_FILE = AssignmentWiproUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wipro.AssignmentWiproUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AssignmentWipro;
+			};
+			name = Debug;
+		};
+		CB373BF12439D4B400FA249A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLAPZ3LKA;
+				INFOPLIST_FILE = AssignmentWiproUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wipro.AssignmentWiproUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AssignmentWipro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB373BB92439D4B200FA249A /* Build configuration list for PBXProject "AssignmentWipro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB373BE72439D4B400FA249A /* Debug */,
+				CB373BE82439D4B400FA249A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB373BE92439D4B400FA249A /* Build configuration list for PBXNativeTarget "AssignmentWipro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB373BEA2439D4B400FA249A /* Debug */,
+				CB373BEB2439D4B400FA249A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB373BEC2439D4B400FA249A /* Build configuration list for PBXNativeTarget "AssignmentWiproTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB373BED2439D4B400FA249A /* Debug */,
+				CB373BEE2439D4B400FA249A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB373BEF2439D4B400FA249A /* Build configuration list for PBXNativeTarget "AssignmentWiproUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB373BF02439D4B400FA249A /* Debug */,
+				CB373BF12439D4B400FA249A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB373BC82439D4B200FA249A /* AssignmentWipro.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB373BC92439D4B200FA249A /* AssignmentWipro.xcdatamodel */,
+			);
+			currentVersion = CB373BC92439D4B200FA249A /* AssignmentWipro.xcdatamodel */;
+			path = AssignmentWipro.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CB373BB62439D4B200FA249A /* Project object */;
+}
