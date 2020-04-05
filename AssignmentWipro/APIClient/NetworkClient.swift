@@ -11,8 +11,13 @@ import UIKit
 
 public typealias NetworkRouterCompletionHandler = (_ data: Data?,_ response: URLResponse?, _ error: Error?)->()
 
+protocol NetworkRouter : class {
+    func loadRequest(_ request: URLRequest, completion: @escaping NetworkRouterCompletionHandler)
+    func cancel()
+}
 
-internal final class NetworkClient
+
+internal final class NetworkClient : NetworkRouter
 {
     private var task : URLSessionTask?
     

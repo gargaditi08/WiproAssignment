@@ -18,6 +18,8 @@
 		CB373BF42439D58400FA249A /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB373BF32439D58400FA249A /* AsyncImageView.swift */; };
 		CBE9DB122439EA810064814B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9DB112439EA810064814B /* NetworkClient.swift */; };
 		CBE9DB16243A15B20064814B /* APIRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9DB15243A15B20064814B /* APIRequestError.swift */; };
+		CBE9DB19243A2E330064814B /* CanadaUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9DB18243A2E330064814B /* CanadaUpdates.swift */; };
+		CBE9DB1C243A3AE10064814B /* TableListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9DB1B243A3AE10064814B /* TableListService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		CB373BF32439D58400FA249A /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		CBE9DB112439EA810064814B /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CBE9DB15243A15B20064814B /* APIRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestError.swift; sourceTree = "<group>"; };
+		CBE9DB18243A2E330064814B /* CanadaUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaUpdates.swift; sourceTree = "<group>"; };
+		CBE9DB1B243A3AE10064814B /* TableListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		CB373BB52439D4B200FA249A = {
 			isa = PBXGroup;
 			children = (
+				CBE9DB1A243A3AC50064814B /* APIServices */,
 				CB373BC02439D4B200FA249A /* AssignmentWipro */,
 				CB373BD82439D4B400FA249A /* AssignmentWiproTests */,
 				CB373BE32439D4B400FA249A /* AssignmentWiproUITests */,
@@ -105,6 +110,7 @@
 		CB373BC02439D4B200FA249A /* AssignmentWipro */ = {
 			isa = PBXGroup;
 			children = (
+				CBE9DB17243A2E1B0064814B /* Model */,
 				CBE9DB102439EA650064814B /* APIClient */,
 				CB373BF22439D54700FA249A /* Extension */,
 				CB373BC12439D4B200FA249A /* AppDelegate.swift */,
@@ -151,6 +157,22 @@
 				CBE9DB15243A15B20064814B /* APIRequestError.swift */,
 			);
 			path = APIClient;
+			sourceTree = "<group>";
+		};
+		CBE9DB17243A2E1B0064814B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBE9DB18243A2E330064814B /* CanadaUpdates.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBE9DB1A243A3AC50064814B /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				CBE9DB1B243A3AE10064814B /* TableListService.swift */,
+			);
+			path = APIServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +312,8 @@
 				CB373BC22439D4B200FA249A /* AppDelegate.swift in Sources */,
 				CB373BF42439D58400FA249A /* AsyncImageView.swift in Sources */,
 				CBE9DB16243A15B20064814B /* APIRequestError.swift in Sources */,
+				CBE9DB1C243A3AE10064814B /* TableListService.swift in Sources */,
+				CBE9DB19243A2E330064814B /* CanadaUpdates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
