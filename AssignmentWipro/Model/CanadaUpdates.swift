@@ -8,6 +8,7 @@
 
 import UIKit
 
+//BO object
 struct CanadaUpdates : Codable {
     var title : String?
     var rows : [Rows]

@@ -31,7 +31,8 @@ class ViewController: UIViewController {
         tableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        tableView.backgroundColor = UIColor.lightGray
+        
+        tableView.backgroundColor = UIColor.white
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableView.automaticDimension
         tableView.refreshControl = refreshControl
@@ -43,31 +44,35 @@ class ViewController: UIViewController {
         self.initializeViewModel()
         
     }
+    //refresing Table Data
     @objc private func refreshTableData(_ sender: Any)
-    {
-        tableView.reloadData()
-        self.refreshControl.endRefreshing()
-        
-    }
+       {
+           self.viewModel.getUpdateList()
+           self.refreshControl.endRefreshing()
+           
+       }
     
-    func initializeViewModel(){
-        self.viewModel.getUpdateList()
-        self.viewModel.reloadData = { [weak self] in
-            self?.tableView.reloadData()
-        
-    }
-        self.viewModel.apiErrorOccured =  { [weak self] (error : String) in
-            guard let strongSelf = self else {
-                return
-            }
-            DispatchQueue.main.async {
-                strongSelf.showAlertScreen(nil, message: error, alertTitle:"OK", responseHandler:nil)
+     func initializeViewModel(){
+            self.viewModel.getUpdateList()
+            self.viewModel.reloadData = { [weak self] in
+                self?.tableView.reloadData()
+            
+        }
+            self.viewModel.apiErrorOccured =  { [weak self] (error : String) in
+                guard let strongSelf = self else {
+                    return
+                }
+                DispatchQueue.main.async {
+                    strongSelf.showAlertScreen(nil, message: error, alertTitle:"OK", responseHandler:nil)
+                }
             }
         }
+
     }
 
-}
-
+   
+    
+//table view datasource extention
 extension ViewController : UITableViewDataSource {
     func tableView(_ tableView : UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.viewModel.noOfRows
@@ -84,7 +89,7 @@ extension ViewController : UITableViewDataSource {
         return UITableView.automaticDimension
     }
 }
-
+//table view delegate extention
 extension ViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -94,6 +99,7 @@ extension ViewController : UITableViewDelegate {
     }
 }
 
+// Alert for error Handleing
 extension UIViewController {
     typealias AlertActionHandler = ()-> Void
     

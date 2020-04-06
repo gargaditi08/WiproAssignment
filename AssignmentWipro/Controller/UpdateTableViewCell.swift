@@ -29,18 +29,11 @@ class UpdateTableViewCell: UITableViewCell {
         }
     }
 }
-//    let containerView : UIView = {
-//        let view = UIView()
-//        view.translatesAutoresizingMaskIntoConstraints = false
-//        view.clipsToBounds = true
-//
-//        return view
-//    }()
     
     let updatesImageView: AsyncImageView = {
         let img = AsyncImageView()
-        img.contentMode = .scaleAspectFill
-        img.translatesAutoresizingMaskIntoConstraints = false
+        img.contentMode = .scaleAspectFill //image will never scretch
+        img.translatesAutoresizingMaskIntoConstraints = false // enable Autolayout
         img.layer.cornerRadius = 25
         img.clipsToBounds = true
         return img
@@ -79,12 +72,7 @@ class UpdateTableViewCell: UITableViewCell {
         
         let marginGuide = contentView.layoutMarginsGuide
         
-//        containerView.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
-//        containerView.leadingAnchor.constraint(equalTo: self.updatesImageView.trailingAnchor, constant: 10).isActive = true
-//        containerView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -10).isActive = true
-//        containerView.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        
-        
+
         titleLabel.leadingAnchor.constraint(equalTo: self.updatesImageView.trailingAnchor, constant: 10).isActive = true
         titleLabel.topAnchor.constraint(equalTo: marginGuide.topAnchor).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true

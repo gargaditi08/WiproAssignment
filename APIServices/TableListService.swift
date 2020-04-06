@@ -14,7 +14,7 @@ class TableListService : NSObject {
     var networkClient : NetworkClient =  NetworkClient()
     
     func getDataList(requestCompletion : @escaping (_ object: CanadaUpdates?,_ error: String?)->()) {
-        
+    
      let urlString = "http://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
         
               guard let url = URL(string: urlString) else {
@@ -53,4 +53,3 @@ class TableListService : NSObject {
            
 }
 }
- 

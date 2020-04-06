@@ -13,7 +13,7 @@ internal final class UpdatesViewModel {
     var listService: TableListService = TableListService()
     var apiErrorOccured: ((_ message: String)->())?
     var reloadData: (()->())?
-   // var rowDetails : [Rows] = []
+ 
     var canadaUpdate : CanadaUpdates?{
      didSet{
         self.reloadData?()
