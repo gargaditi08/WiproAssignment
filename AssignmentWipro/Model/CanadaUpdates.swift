@@ -10,10 +10,11 @@ import UIKit
 
 struct CanadaUpdates : Codable {
     var title : String?
-    var description : String?
-    var imageHref : String?
+    var rows : [Rows]
 }
 
 struct Rows : Codable {
-    var rows : [Rows]
+   var title : String?
+   var description : String?
+   var imageHref : String?
 }

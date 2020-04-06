@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB2C2ECF243AADF200BF66EA /*  UpdatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2ECE243AADF200BF66EA /*  UpdatesViewModel.swift */; };
+		CB2C2ED2243AC2C900BF66EA /* UpdateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2ED1243AC2C900BF66EA /* UpdateTableViewCell.swift */; };
+		CB2C2ED6243AD10000BF66EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2C2ED5243AD10000BF66EA /* Main.storyboard */; };
+		CB2C2ED7243AD10000BF66EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2C2ED5243AD10000BF66EA /* Main.storyboard */; };
 		CB373BC22439D4B200FA249A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB373BC12439D4B200FA249A /* AppDelegate.swift */; };
 		CB373BC42439D4B200FA249A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB373BC32439D4B200FA249A /* ViewController.swift */; };
-		CB373BC72439D4B200FA249A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB373BC52439D4B200FA249A /* Main.storyboard */; };
 		CB373BCA2439D4B200FA249A /* AssignmentWipro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB373BC82439D4B200FA249A /* AssignmentWipro.xcdatamodeld */; };
 		CB373BCC2439D4B400FA249A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB373BCB2439D4B400FA249A /* Assets.xcassets */; };
 		CB373BCF2439D4B400FA249A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB373BCD2439D4B400FA249A /* LaunchScreen.storyboard */; };
@@ -17,7 +20,6 @@
 		CB373BE52439D4B400FA249A /* AssignmentWiproUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB373BE42439D4B400FA249A /* AssignmentWiproUITests.swift */; };
 		CB373BF42439D58400FA249A /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB373BF32439D58400FA249A /* AsyncImageView.swift */; };
 		CBE9DB122439EA810064814B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9DB112439EA810064814B /* NetworkClient.swift */; };
-		CBE9DB16243A15B20064814B /* APIRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9DB15243A15B20064814B /* APIRequestError.swift */; };
 		CBE9DB19243A2E330064814B /* CanadaUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9DB18243A2E330064814B /* CanadaUpdates.swift */; };
 		CBE9DB1C243A3AE10064814B /* TableListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9DB1B243A3AE10064814B /* TableListService.swift */; };
 /* End PBXBuildFile section */
@@ -40,10 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB2C2ECE243AADF200BF66EA /*  UpdatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " UpdatesViewModel.swift"; sourceTree = "<group>"; };
+		CB2C2ED1243AC2C900BF66EA /* UpdateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTableViewCell.swift; sourceTree = "<group>"; };
+		CB2C2ED5243AD10000BF66EA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CB373BBE2439D4B200FA249A /* AssignmentWipro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentWipro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB373BC12439D4B200FA249A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB373BC32439D4B200FA249A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB373BC62439D4B200FA249A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB373BC92439D4B200FA249A /* AssignmentWipro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AssignmentWipro.xcdatamodel; sourceTree = "<group>"; };
 		CB373BCB2439D4B400FA249A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB373BCE2439D4B400FA249A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,7 +60,6 @@
 		CB373BE62439D4B400FA249A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB373BF32439D58400FA249A /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		CBE9DB112439EA810064814B /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
-		CBE9DB15243A15B20064814B /* APIRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestError.swift; sourceTree = "<group>"; };
 		CBE9DB18243A2E330064814B /* CanadaUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaUpdates.swift; sourceTree = "<group>"; };
 		CBE9DB1B243A3AE10064814B /* TableListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,9 +89,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB2C2ECD243AADC400BF66EA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB2C2ECE243AADF200BF66EA /*  UpdatesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB2C2ED0243AB80600BF66EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB373BC32439D4B200FA249A /* ViewController.swift */,
+				CB2C2ED1243AC2C900BF66EA /* UpdateTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		CB373BB52439D4B200FA249A = {
 			isa = PBXGroup;
 			children = (
+				CB2C2ECD243AADC400BF66EA /* ViewModel */,
 				CBE9DB1A243A3AC50064814B /* APIServices */,
 				CB373BC02439D4B200FA249A /* AssignmentWipro */,
 				CB373BD82439D4B400FA249A /* AssignmentWiproTests */,
@@ -114,8 +135,7 @@
 				CBE9DB102439EA650064814B /* APIClient */,
 				CB373BF22439D54700FA249A /* Extension */,
 				CB373BC12439D4B200FA249A /* AppDelegate.swift */,
-				CB373BC32439D4B200FA249A /* ViewController.swift */,
-				CB373BC52439D4B200FA249A /* Main.storyboard */,
+				CB2C2ED0243AB80600BF66EA /* Controller */,
 				CB373BCB2439D4B400FA249A /* Assets.xcassets */,
 				CB373BCD2439D4B400FA249A /* LaunchScreen.storyboard */,
 				CB373BD02439D4B400FA249A /* Info.plist */,
@@ -138,6 +158,7 @@
 			children = (
 				CB373BE42439D4B400FA249A /* AssignmentWiproUITests.swift */,
 				CB373BE62439D4B400FA249A /* Info.plist */,
+				CB2C2ED5243AD10000BF66EA /* Main.storyboard */,
 			);
 			path = AssignmentWiproUITests;
 			sourceTree = "<group>";
@@ -154,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				CBE9DB112439EA810064814B /* NetworkClient.swift */,
-				CBE9DB15243A15B20064814B /* APIRequestError.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -279,9 +299,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2C2ED6243AD10000BF66EA /* Main.storyboard in Resources */,
 				CB373BCF2439D4B400FA249A /* LaunchScreen.storyboard in Resources */,
 				CB373BCC2439D4B400FA249A /* Assets.xcassets in Resources */,
-				CB373BC72439D4B200FA249A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2C2ED7243AD10000BF66EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,8 +332,9 @@
 				CB373BCA2439D4B200FA249A /* AssignmentWipro.xcdatamodeld in Sources */,
 				CB373BC22439D4B200FA249A /* AppDelegate.swift in Sources */,
 				CB373BF42439D58400FA249A /* AsyncImageView.swift in Sources */,
-				CBE9DB16243A15B20064814B /* APIRequestError.swift in Sources */,
+				CB2C2ED2243AC2C900BF66EA /* UpdateTableViewCell.swift in Sources */,
 				CBE9DB1C243A3AE10064814B /* TableListService.swift in Sources */,
+				CB2C2ECF243AADF200BF66EA /*  UpdatesViewModel.swift in Sources */,
 				CBE9DB19243A2E330064814B /* CanadaUpdates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,14 +371,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CB373BC52439D4B200FA249A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB373BC62439D4B200FA249A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CB373BCD2439D4B400FA249A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
