@@ -13,7 +13,8 @@ class ViewController: UIViewController {
  var tableView = UITableView()
     
  var viewModel = UpdatesViewModel()
-    
+ private let refreshControl = UIRefreshControl()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +34,19 @@ class ViewController: UIViewController {
         tableView.backgroundColor = UIColor.lightGray
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshTableData), for: .valueChanged)
         tableView.dataSource = self
         tableView.delegate = self
         self.tableView.register(UpdateTableViewCell.self, forCellReuseIdentifier: "updateCell")
         
         self.initializeViewModel()
+        
+    }
+    @objc private func refreshTableData(_ sender: Any)
+    {
+        tableView.reloadData()
+        self.refreshControl.endRefreshing()
         
     }
     

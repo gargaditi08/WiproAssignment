@@ -11,7 +11,6 @@ import UIKit
 class DetailTableViewController: UIViewController {
 
     var selectedItem : Rows?
-    
     let updatesImageView: AsyncImageView = {
         let img = AsyncImageView()
         img.contentMode = .scaleAspectFill
