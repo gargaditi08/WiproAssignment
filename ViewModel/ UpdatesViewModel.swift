@@ -11,6 +11,7 @@ import UIKit
 internal final class UpdatesViewModel {
     
     var listService: TableListService = TableListService()
+    var apiErrorOccured: ((_ message: String)->())?
     var reloadData: (()->())?
    // var rowDetails : [Rows] = []
     var canadaUpdate : CanadaUpdates?{
@@ -28,6 +29,8 @@ internal final class UpdatesViewModel {
             if let canadaData = result {
                 self.canadaUpdate = canadaData
 
+            }else if let errorMessage = error{
+                self.apiErrorOccured?(errorMessage)
             }
             
        })
@@ -43,8 +46,9 @@ internal final class UpdatesViewModel {
       
 //
     func updateAtIndex(index:Int) -> Rows? {
-        let content = self.canadaUpdate?.rows[index]
-        return content
+      guard let content = self.canadaUpdate else {return nil}
+        
+        return content.rows[index]
         
     }
             
