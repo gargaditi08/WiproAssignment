@@ -13,10 +13,12 @@ internal final class UpdatesViewModel {
     var listService: TableListService = TableListService()
     var apiErrorOccured: ((_ message: String)->())?
     var reloadData: (()->())?
+    var passNavTitle: (() ->())?
  
     var canadaUpdate : CanadaUpdates?{
      didSet{
         self.reloadData?()
+        self.passNavTitle?()
     }
       }
     init()  {
@@ -36,6 +38,14 @@ internal final class UpdatesViewModel {
        })
     }
     
+    var titleNavbar : String?{
+        if let titleMain = self.canadaUpdate{
+            return titleMain.title
+        }
+        else {
+            return "Canara Detail"
+        }
+    }
     
     var noOfRows : Int {
         if let object = self.canadaUpdate{

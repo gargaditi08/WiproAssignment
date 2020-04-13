@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(reachabilityDidChange(_:)), name: NSNotification.Name(rawValue: ReachabilityDidChangeNotification), object: nil)
         _ = reachability?.startNotifier()
         
-        navigationItem.title = "Canada Updates"
+       
         
         self.view.backgroundColor = UIColor.white
         
@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         self.tableView.register(UpdateTableViewCell.self, forCellReuseIdentifier: "updateCell")
         
         self.initializeViewModel()
+       // navigationItem.title = viewModel.titleNavbar
         
     }
     //refresing Table Data
@@ -61,6 +62,9 @@ class ViewController: UIViewController {
             self.viewModel.reloadData = { [weak self] in
                 self?.tableView.reloadData()
             
+        }
+        self.viewModel.passNavTitle = { [weak self] in
+            self!.navigationItem.title = self!.viewModel.titleNavbar
         }
             self.viewModel.apiErrorOccured =  { [weak self] (error : String) in
                 guard let strongSelf = self else {

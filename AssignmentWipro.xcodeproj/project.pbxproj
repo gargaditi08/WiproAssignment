@@ -12,7 +12,6 @@
 		CB2C2ED9243B38B600BF66EA /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2ED8243B38B600BF66EA /* DetailTableViewController.swift */; };
 		CB2C2EDA243B38B600BF66EA /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2ED8243B38B600BF66EA /* DetailTableViewController.swift */; };
 		CB2C2EDF243DE8BF00BF66EA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2EDE243DE8BF00BF66EA /* Constant.swift */; };
-		CB2C2EE0243DE8BF00BF66EA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2EDE243DE8BF00BF66EA /* Constant.swift */; };
 		CB2C2F25243E186C00BF66EA /* AssignmentWiproUITests in Resources */ = {isa = PBXBuildFile; fileRef = CB2C2F23243E186B00BF66EA /* AssignmentWiproUITests */; };
 		CB2C2F26243E186C00BF66EA /* AssignmentWiproUITests in Resources */ = {isa = PBXBuildFile; fileRef = CB2C2F23243E186B00BF66EA /* AssignmentWiproUITests */; };
 		CB2C2F3524434FC000BF66EA /* AssignmentWiproTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C2F3424434FC000BF66EA /* AssignmentWiproTests.swift */; };
@@ -52,7 +51,6 @@
 		CB2C2ED8243B38B600BF66EA /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		CB2C2EDE243DE8BF00BF66EA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		CB2C2F23243E186B00BF66EA /* AssignmentWiproUITests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AssignmentWiproUITests; sourceTree = "<group>"; };
-		CB2C2F2C243EB6AF00BF66EA /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		CB2C2F3224434FC000BF66EA /* AssignmentWiproTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentWiproTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2C2F3424434FC000BF66EA /* AssignmentWiproTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentWiproTests.swift; sourceTree = "<group>"; };
 		CB2C2F3624434FC000BF66EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -162,9 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				CB2C2F3C2443F71500BF66EA /* NetworkReachability */,
-				CB2C2F2C243EB6AF00BF66EA /* ViewControllerTests.swift */,
 				CB373BC02439D4B200FA249A /* AssignmentWipro */,
-				CB2C2EDE243DE8BF00BF66EA /* Constant.swift */,
 				CB2C2F3324434FC000BF66EA /* AssignmentWiproTests */,
 				CB373BBF2439D4B200FA249A /* Products */,
 				CB2C2F23243E186B00BF66EA /* AssignmentWiproUITests */,
@@ -199,6 +195,7 @@
 		CB373BF22439D54700FA249A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				CB2C2EDE243DE8BF00BF66EA /* Constant.swift */,
 				CB373BF32439D58400FA249A /* AsyncImageView.swift */,
 			);
 			path = Utility;
@@ -381,7 +378,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB2C2EDA243B38B600BF66EA /* DetailTableViewController.swift in Sources */,
-				CB2C2EE0243DE8BF00BF66EA /* Constant.swift in Sources */,
 				CB2C2F3F2443F74200BF66EA /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
