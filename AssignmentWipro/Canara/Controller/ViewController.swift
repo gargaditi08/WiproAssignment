@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+  
+//check reachability
+ var reachability : Reachability? = Reachability.networkReachabilityForInternetConnection()
  var tableView = UITableView()
     
  var viewModel = UpdatesViewModel()
@@ -19,6 +21,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityDidChange(_:)), name: NSNotification.Name(rawValue: ReachabilityDidChangeNotification), object: nil)
+        _ = reachability?.startNotifier()
         
         navigationItem.title = "Canada Updates"
         
@@ -67,8 +71,24 @@ class ViewController: UIViewController {
                 }
             }
         }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+         checkReachability()
     }
+    func  checkReachability() {
+        guard  let r = reachability  else { return }
+        if r.isReachable {
+            view.backgroundColor = UIColor.green
+        } else {
+            view.backgroundColor = UIColor.red
+        }
+    }
+    
+    @objc func reachabilityDidChange(_ notification : Notification) {
+        checkReachability()
+    }
+
+}
 
    
     

@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+
+open class Utils : NSObject {
+    
+    internal static let shared = Utils()
+}
+
+
+
