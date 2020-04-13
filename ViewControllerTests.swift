@@ -1,14 +1,14 @@
 //
-//  AssignmentWiproTests.swift
+//  ViewControllerTests.swift
 //  AssignmentWiproTests
 //
-//  Created by Aditi Garg on 12/04/20.
+//  Created by Aditi Garg on 09/04/20.
 //  Copyright © 2020 Aditi Garg. All rights reserved.
 //
 
 import XCTest
 
-class AssignmentWiproTests: XCTestCase {
+class ViewControllerTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -25,7 +25,7 @@ class AssignmentWiproTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        measure {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }
