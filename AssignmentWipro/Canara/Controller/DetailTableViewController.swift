@@ -87,7 +87,8 @@ class DetailTableViewController: UIViewController {
         }
         
         if let imageURL = updatesItem.imageHref{
-            updatesImageView.loadAsyncFrom(url: imageURL, placeholder: nil)
+           
+            updatesImageView.loadAsyncFrom(url: imageURL, placeholder: Utils.placeholderImg)
                }
         
         if let description = updatesItem.description{

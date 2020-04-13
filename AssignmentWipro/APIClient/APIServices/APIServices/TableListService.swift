@@ -15,8 +15,7 @@ class TableListService : NSObject {
     
     func getDataList(requestCompletion : @escaping (_ object: CanadaUpdates?,_ error: String?)->()) {
     
-     let urlString = "http://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
-        
+        let urlString = apiForCanaraDetails.BaseUrl
               guard let url = URL(string: urlString) else {
                 requestCompletion(nil, "Invalid URL")
                 return

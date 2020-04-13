@@ -19,7 +19,7 @@ class UpdateTableViewCell: UITableViewCell {
         }
         updatesImageView.image = nil
         if let imageURL = listItem.imageHref {
-            updatesImageView.loadAsyncFrom(url: imageURL, placeholder: nil)
+            updatesImageView.loadAsyncFrom(url: imageURL, placeholder: Utils.placeholderImg)
         }
             
             

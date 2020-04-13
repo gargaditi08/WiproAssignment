@@ -19,6 +19,7 @@ class AsyncImageView: UIImageView {
     //Mark: - Public Methods
     
     func loadAsyncFrom(url : String, placeholder : UIImage?) {
+       
         let imageURL = url as NSString
         
         //To check is image is already in cache then load it
@@ -29,7 +30,7 @@ class AsyncImageView: UIImageView {
         }
         image = placeholder
         currentURL = imageURL
-        guard let requestURL = URL(string: url) else { image = placeholder; return}
+        guard let requestURL = URL(string: url) else { image = Utils.placeholderImg; return}
         URLSession.shared.dataTask(with: requestURL) { (data, response, error) in
             DispatchQueue.main.async { [weak self] in
                 if error == nil {
@@ -41,14 +42,14 @@ class AsyncImageView: UIImageView {
                               asyncImageCacheArray.setObject(imageToPresent, forKey: imageURL)
                                 self?.image = imageToPresent
                             } else {
-                                self?.image = placeholder
+                                self?.image = Utils.placeholderImg
                             }
                         }
                     } else {
-                        self?.image = placeholder
+                        self?.image = Utils.placeholderImg
                     }
                 } else {
-               self?.image = placeholder
+               self?.image = Utils.placeholderImg
             }
         }
         
